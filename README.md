@@ -73,7 +73,7 @@ This initial experiments achieved R² ≈ 0.67, capturing much of the lap-time v
 
 Neural Networks. We trained several NN variants. An absolute-time NN suffered from high variance on the raw target (MAE ≈ 1.63 s, RMSE ≈ 3.72 s reported for the initial absolute model), so we implemented a residual (baseline) formulation: the network predicts the deviation from a local baseline (average recent lap), which substantially reduced variance. The residual NN achieved MAE ≈ 1.16–1.19 s and an RMSE ≈ 3.30 s on the final test set; residual modelling tightened the error distribution around zero and improved robustness to outlier laps.
 
-Telemetry-based NN. A telemetry-focused NN trained on FastF1 features (tyre life, fuel proxy, mean speed, throttle/brake, DRS, gear, and weather) and expanded from a two-race to a four-race dataset (Bahrain, Monaco, Silverstone, Monza) delivered the strongest telemetry-based results — reducing mean error into the sub-second range (the report documents the model improving to ≈0.83 s mean error as the dataset grew). This highlights the importance of diverse track data for generalization.
+Telemetry-based NN. A telemetry-focused NN trained on FastF1 features (tyre life, fuel proxy, mean speed, throttle/brake, DRS, gear, and weather) and expanded from a two-race to a four-race dataset (Bahrain, Monaco, Silverstone, Monza) delivered the strongest telemetry-based results — reducing mean error into the sub-second range (the report documents the model improving to ≈0.83 s MAE and 1.3 RMSE as the dataset grew). This highlights the importance of diverse track data for generalization.
 
 # Random Forest
 
