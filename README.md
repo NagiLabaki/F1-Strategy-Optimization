@@ -49,7 +49,7 @@ We did some analysis and experimentation with the dataset which you can find in 
 
 # Methods and Models
 
-We plan to implement multiple supervised learning models to predict lap times as continuous values.
+We implemented multiple supervised learning models to predict lap times as continuous values.
 
 - Linear Regression (Baseline): interpretable model to estimate feature influence on lap time.
 
@@ -66,3 +66,6 @@ We used the following features in a linear regression model as a preliminary mod
 - LapNumber²: captures nonlinear performance drop due to tire degradation.
 
 This initial experiments achieved R² ≈ 0.67, capturing much of the lap-time variability while highlighting areas for model improvement.
+
+
+NEED TO ADD NNs, random forest, and summary.
